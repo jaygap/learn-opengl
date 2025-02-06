@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/joseg/Programming/cpp-projects/learn-opengl/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/learn_opengl.dir/src/main.cpp.o -c /home/joseg/Programming/cpp-projects/learn-opengl/src/main.cpp",
+  "file": "/home/joseg/Programming/cpp-projects/learn-opengl/src/main.cpp",
+  "output": "CMakeFiles/learn_opengl.dir/src/main.cpp.o"
+}
+]

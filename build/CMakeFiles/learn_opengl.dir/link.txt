@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic -Wl,--dependency-file=CMakeFiles/learn_opengl.dir/link.d CMakeFiles/learn_opengl.dir/src/main.cpp.o -o learn_opengl  -lglfw

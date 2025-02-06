@@ -1,0 +1,3 @@
+/home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles/learn_opengl.dir
+/home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles/edit_cache.dir
+/home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles/rebuild_cache.dir
