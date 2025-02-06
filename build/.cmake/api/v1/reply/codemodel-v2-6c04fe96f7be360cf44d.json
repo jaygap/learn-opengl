@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.0.0"
+						"string" : "3.10.0"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "learn_opengl::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-learn_opengl-Debug-8f343c44e8eb7904fb79.json",
+					"jsonFile" : "target-learn_opengl-Debug-aec1be13f50f74568165.json",
 					"name" : "learn_opengl",
 					"projectIndex" : 0
 				}

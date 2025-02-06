@@ -1,8 +1,14 @@
 [
 {
   "directory": "/home/joseg/Programming/cpp-projects/learn-opengl/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/learn_opengl.dir/src/main.cpp.o -c /home/joseg/Programming/cpp-projects/learn-opengl/src/main.cpp",
+  "command": "/usr/bin/g++  -I/home/joseg/Programming/cpp-projects/learn-opengl/include -g -o CMakeFiles/learn_opengl.dir/src/main.cpp.o -c /home/joseg/Programming/cpp-projects/learn-opengl/src/main.cpp",
   "file": "/home/joseg/Programming/cpp-projects/learn-opengl/src/main.cpp",
   "output": "CMakeFiles/learn_opengl.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/joseg/Programming/cpp-projects/learn-opengl/build",
+  "command": "/usr/bin/gcc  -I/home/joseg/Programming/cpp-projects/learn-opengl/include -g -o CMakeFiles/learn_opengl.dir/src/glad.c.o -c /home/joseg/Programming/cpp-projects/learn-opengl/src/glad.c",
+  "file": "/home/joseg/Programming/cpp-projects/learn-opengl/src/glad.c",
+  "output": "CMakeFiles/learn_opengl.dir/src/glad.c.o"
 }
 ]

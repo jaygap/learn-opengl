@@ -128,4 +128,9 @@ CMakeFiles/learn_opengl.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc
+ /usr/include/c++/14/bits/istream.tcc \
+ /home/joseg/Programming/cpp-projects/learn-opengl/include/glad/glad.h \
+ /home/joseg/Programming/cpp-projects/learn-opengl/include/KHR/khrplatform.h \
+ /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h

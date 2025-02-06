@@ -85,12 +85,12 @@ clean: CMakeFiles/learn_opengl.dir/clean
 CMakeFiles/learn_opengl.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_opengl.dir/build.make CMakeFiles/learn_opengl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_opengl.dir/build.make CMakeFiles/learn_opengl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles --progress-num=1,2 "Built target learn_opengl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles --progress-num=1,2,3 "Built target learn_opengl"
 .PHONY : CMakeFiles/learn_opengl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/learn_opengl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/learn_opengl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles 0
 .PHONY : CMakeFiles/learn_opengl.dir/rule
@@ -102,7 +102,7 @@ learn_opengl: CMakeFiles/learn_opengl.dir/rule
 # codegen rule for target.
 CMakeFiles/learn_opengl.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn_opengl.dir/build.make CMakeFiles/learn_opengl.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles --progress-num=1,2 "Finished codegen for target learn_opengl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/joseg/Programming/cpp-projects/learn-opengl/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target learn_opengl"
 .PHONY : CMakeFiles/learn_opengl.dir/codegen
 
 # clean rule for target.
