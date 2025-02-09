@@ -152,4 +152,27 @@ CMakeFiles/learn_opengl.dir/src/main.cpp.o: \
  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
  /usr/include/c++/14/tr1/poly_hermite.tcc \
  /usr/include/c++/14/tr1/poly_laguerre.tcc \
- /usr/include/c++/14/tr1/riemann_zeta.tcc
+ /usr/include/c++/14/tr1/riemann_zeta.tcc \
+ /home/joseg/Programming/cpp-projects/learn-opengl/include/shader.h \
+ /usr/include/c++/14/fstream /usr/include/c++/14/bits/codecvt.h \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/14/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/14/bits/fstream.tcc /usr/include/c++/14/sstream \
+ /usr/include/c++/14/bits/sstream.tcc /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /home/joseg/Programming/cpp-projects/learn-opengl/include/stb_image.h \
+ /usr/include/c++/14/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h \
+ /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/assert.h \
+ /usr/lib/gcc/x86_64-redhat-linux/14/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/14/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/14/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-redhat-linux/14/include/mm_malloc.h
