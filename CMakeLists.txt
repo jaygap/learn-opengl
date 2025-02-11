@@ -8,6 +8,8 @@ add_executable(learn_opengl
     src/main.cpp
     src/glad.c
     include/glad/glad.h
+    include/shader.h
+    include/stb_image.h
 )
 
 include_directories(include)
