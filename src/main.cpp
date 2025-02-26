@@ -23,7 +23,7 @@ int main(){
     int height = 600, width = 800;
 
     //create window
-    window = glfwCreateWindow(width, height, "triangle (yet)", NULL, NULL);
+    window = glfwCreateWindow(width, height, "this is the name of the window !!", NULL, NULL);
     glfwMakeContextCurrent(window);
 
     if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
@@ -41,7 +41,7 @@ int main(){
         -0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,   //bottom left
          0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,   //bottom right
         -0.5f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f,   //top left
-         0.5f,  0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f    //top right
+         0.5f,  0.5f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f    //top right
     };
 
     unsigned int indices[] = {
@@ -79,10 +79,9 @@ int main(){
 
     //load + create texture
 
-    unsigned int texture;
-    glGenTextures(1, &texture);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture);
+    unsigned int texture1;
+    glGenTextures(1, &texture1);
+    glBindTexture(GL_TEXTURE_2D, texture1);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -99,8 +98,28 @@ int main(){
 
     stbi_image_free(data);
 
+    unsigned int texture2;
+    glGenTextures(1, &texture2);
+    glBindTexture(GL_TEXTURE_2D, texture2);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);    
+
+    stbi_set_flip_vertically_on_load(true);
+    data = stbi_load("/home/joseg/Programming/cpp-projects/learn-opengl/src/images/awesomeface.png", &img_width, &img_height, &channels, 0);
+
+    if(data){
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, img_width, img_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
 
     double time;
+
+    shader.use();
+    shader.setInt("base_image", 0);
+    shader.setInt("overlay_image", 1);
 
     //while the window shouldnt close
     while(!glfwWindowShouldClose(window)){
@@ -111,7 +130,13 @@ int main(){
         //clear colour buffer bit (shows clear colour)
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glBindTexture(GL_TEXTURE_2D, texture);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture1);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, texture2);
+
+        shader.setFloat("rotation_degree", time / 2.0f);
+        shader.setVec3("offset", sin(time) / 2.0f, cos(time) / 2.0f, 0.0f);
 
         shader.use();
         glBindVertexArray(VAO);
